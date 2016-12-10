@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+    <ul>
+        <% list.forEach(function (ele) { %>
+            <li><%= ele.description %> - <%= ele.date %></li>
+        <% }); %>
+    </ul>
+
+    <form method="get">What to do: <input type="text" name="description"> <input type="submit" value="Submit"></form>
+</body>
+</html>
