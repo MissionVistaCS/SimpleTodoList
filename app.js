@@ -6,7 +6,7 @@ var http = require('http');
 
 var app = express();
 
-mongoose.connect("mongodb://localhost:27017/list2"); //Connects to database list
+mongoose.connect("mongodb://localhost:27017/list"); //Connects to database list
 var ListItem = require("./models/ListItem");
 
 app.set('view engine', 'ejs');
